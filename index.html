@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go out travel!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: linear-gradient(to bottom, #87CEEB, #fff); /* Sky blue to white gradient */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative; /* Required for pseudo-elements */
+        }
+        header::before,
+        header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px; /* Adjust thickness of gradient line */
+            background: linear-gradient(to right, #87CEEB, #fff); /* Sky blue to white gradient */
+            z-index: 1; /* Ensure it's above content */
+        }
+        header::before {
+            top: 0;
+        }
+        header::after {
+            bottom: 0;
+        }
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .post {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: center; /* Center align content */
+        }
+        .post h3 {
+            color: #333;
+        }
+        .post p {
+            color: #666;
+        }
+        .post img {
+            width: 100%; /* Ensure image width is 100% of its container */
+            height: 400px; /* Set a fixed height for uniformity */
+            object-fit: cover; /* Ensure images cover the entire space */
+            display: block; /* Remove any potential inline spacing */
+            margin: 0 auto; /* Center align images */
+        }
+        footer {
+            background: linear-gradient(to top, #87CEEB, #fff); /* Sky blue to white gradient */
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1; /* Ensure it's above content */
+        }
+        footer::before,
+        footer::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 2px; /* Adjust thickness of gradient line */
+            background: linear-gradient(to right, #87CEEB, #fff); /* Sky blue to white gradient */
+        }
+        footer::before {
+            top: 0;
+        }
+        footer::after {
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Go out travel!</h1>
+    </header>
+    <div class="container">
+        <div class="post">
+            <h3>유럽 여행</h3>
+            <img src="AA.14077862.1.jpg" alt="유럽 여행 사진">
+            <p>유럽 대륙에서의 여행 정보를 제공합니다.</p>
+        </div>
+        <div class="post">
+            <h3>아시아 여행</h3>
+            <img src="image-28c8c776-c453-4731-ba86-cafe9d9224a7.jpeg" alt="아시아 여행 사진">
+            <p>아시아 대륙에서의 여행 정보를 제공합니다.</p>
+        </div>
+        <div class="post">
+            <h3>남미 여행</h3>
+            <img src="20230404_C94AE44E9BD1A6C6.jpg" alt="남미 여행 사진">
+            <p>남미 대륙에서의 여행 정보를 제공합니다.</p>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Travel</p>
+    </footer>
+</body>
+</html>
